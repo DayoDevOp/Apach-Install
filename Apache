@@ -2,4 +2,4 @@ yum install httpd -y
 systemctl stop firewalld
 systemctl start httpd
 systemctl enable httpd
-vim /var/www/html/index.html Git is working
+echo "GIT is working now" > /var/www/html/index.html
