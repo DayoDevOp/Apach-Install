@@ -1,5 +1,4 @@
 #! /bin/bash
-yum update htppd
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
@@ -8,4 +7,4 @@ firewall-cmd --permanent --add-service={http,https}
 firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --reload
 systemctl restart httpd
-fi
+
